@@ -1,0 +1,85 @@
+{
+  "mode": "template",
+  "project_title": "PDF FAQ Knowledge Bot - Education Planning Evidence Review Simple RAG - Beginner Custom 5",
+  "short_description": "Beginner Simple RAG template based on PDF FAQ Knowledge Bot. It is complete, runnable, tested, and can be upgraded with real AI provider keys.",
+  "domain_summary": "PDF FAQ Knowledge Bot for answering repeat questions from uploaded documents. Tailored topic: Education Planning Evidence Review Simple RAG - Beginner Custom 5.",
+  "user_persona": "Support specialist",
+  "architecture_notes": [
+    "Selected fallback profile: PDF FAQ Knowledge Bot.",
+    "Project type pattern: Simple RAG.",
+    "FastAPI backend and React frontend are generated before GitHub push.",
+    "Domain behavior is driven by template-specific workflow, rules, documents, and tools."
+  ],
+  "backend_modules": [
+    "main.py",
+    "schemas.py",
+    "db.py",
+    "domain.py",
+    "services/text.py",
+    "services/vector_store.py",
+    "services/tools.py",
+    "services/pipeline.py"
+  ],
+  "frontend_features": [
+    "question form",
+    "answer panel",
+    "source cards",
+    "agent timeline",
+    "starter prompts",
+    "error state"
+  ],
+  "data_sources": [
+    "faq_guide.txt",
+    "source_policy.txt",
+    "tool_catalog.csv"
+  ],
+  "testing_strategy": [
+    "pytest API contract tests",
+    "pipeline behavior test",
+    "tool safety test",
+    "frontend smoke test notes"
+  ],
+  "starter_questions": [
+    "What should I know first about Education Planning Evidence Review Simple RAG - Beginner Custom 5?",
+    "Which source supports the next action for pdf faq knowledge bot?",
+    "Create a support specialist checklist for this case."
+  ],
+  "workflow_steps": [
+    "Receive question",
+    "Search FAQ documents",
+    "Cite the matching answer",
+    "Suggest next step"
+  ],
+  "business_rules": [
+    "Answer only from retrieved context",
+    "Show source names",
+    "Ask for clarification when confidence is low"
+  ],
+  "sample_documents": [
+    {
+      "filename": "faq_guide.txt",
+      "content": "FAQ entries include setup, billing, account access, troubleshooting, and escalation notes."
+    },
+    {
+      "filename": "source_policy.txt",
+      "content": "Answers must cite the retrieved source and avoid guessing when the document is silent."
+    },
+    {
+      "filename": "tool_catalog.csv",
+      "content": "tool,description\ndocument_search,Find FAQ passages\nclarifier,Ask one focused follow-up\n"
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "document_search",
+      "description": "Find FAQ passages"
+    },
+    {
+      "name": "clarifier",
+      "description": "Ask one focused follow-up"
+    }
+  ],
+  "model_provider": "template",
+  "model_name": "template",
+  "fallback_reason": "AI generation failed; template fallback used. Extra data: line 98 column 1 (char 3534)"
+}
